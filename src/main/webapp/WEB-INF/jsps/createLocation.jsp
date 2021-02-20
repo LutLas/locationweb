@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+table, th, td {
+	border: 1px solid blue;
+}
+</style>
 <meta charset="ISO-8859-1">
 <title>Create Location</title>
 </head>
@@ -10,20 +15,20 @@
 	<form action="saveLoc" method="post">
 		<table>
 			<tr>
-				<th>ID:</th>
-				<td><input type="text" name="id" disabled/></td>
+				<th style="padding:10px">ID:</th>
+				<td style="padding:10px"><input type="text" name="id" disabled/></td>
 			</tr>
 			<tr>
-				<th>CODE:</th>
-				<td><input type="text" name="code" /></td>
+				<th style="padding:10px">CODE:</th>
+				<td style="padding:10px"><input type="text" name="code" /></td>
 			</tr>
 			<tr>
-				<th>NAME:</th>
-				<td><input type="text" name="name" /></td>
+				<th style="padding:10px">NAME:</th>
+				<td style="padding:10px"><input type="text" name="name" /></td>
 			</tr>
 			<tr>
-				<th>TYPE:</th>
-				<td>Urban <input type="radio" name="type" value="URBAN"/>Rural <input
+				<th style="padding:10px">TYPE:</th>
+				<td style="padding:10px">Urban <input type="radio" name="type" value="URBAN"/>Rural <input
 					type="radio" name="type" value="RURAL"/></td>
 
 			</tr>
@@ -32,6 +37,7 @@
 			</tr>
 		</table>
 	</form>
+	<a href="displayLocations">View All</a>
 	${msg}
 </body>
 </html>
