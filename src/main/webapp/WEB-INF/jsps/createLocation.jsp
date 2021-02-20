@@ -7,11 +7,11 @@
 <title>Create Location</title>
 </head>
 <body>
-	<form action="" method="">
+	<form action="saveLoc" method="post">
 		<table>
 			<tr>
 				<th>ID:</th>
-				<td><input type="text" name="id" /></td>
+				<td><input type="text" name="id" disabled/></td>
 			</tr>
 			<tr>
 				<th>CODE:</th>
@@ -23,8 +23,8 @@
 			</tr>
 			<tr>
 				<th>TYPE:</th>
-				<td>Urban <input type="radio" name="type" />Rural <input
-					type="radio" name="type" /></td>
+				<td>Urban <input type="radio" name="type" value="URBAN"/>Rural <input
+					type="radio" name="type" value="RURAL"/></td>
 
 			</tr>
 			<tr>
@@ -32,5 +32,6 @@
 			</tr>
 		</table>
 	</form>
+	${msg}
 </body>
 </html>
